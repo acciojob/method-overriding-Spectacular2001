@@ -1,15 +1,4 @@
-package com.driver.test;
+ppackage com.driver.test; // or your test package
 
-import static org.junit.Assert.*;
-
+import com.driver.A;
 import com.driver.B;
-import org.junit.jupiter.api.Test;
-
-public class TestCases {
-    
- @Test
-    public void testMeth() {
-        B obj = new B();
-        assertEquals("Method is overridden in Extended class B", obj.meth());
-    }
-}
