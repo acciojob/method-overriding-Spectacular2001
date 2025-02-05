@@ -1,17 +1,20 @@
-package com.driver.test;  // Your package
+package com.driver.test;
 
-import com.driver.A;  // Import the necessary classes
-import com.driver.B;
+import com.driver.A;  // Importing class A
+import com.driver.B;  // Importing class B
 import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
-public class TestCases {  // Start of the class
+public class TestCases {
 
-    @Test  // Example annotation, if you're using JUnit
-    public void testMethod() {  // A sample test method
-        A a = new A();  // Object creation from class A
-        B b = new B();  // Object creation from class B
+    @Test
+    public void testMethod() {
+        A a = new A();  // Creating an object of class A
+        B b = new B();  // Creating an object of class B
 
-        // Add assertions or logic for your test here
+        // Testing the methods from both classes
+        assertEquals("Invoking method from class A", a.meth());
+        assertEquals("Invoking method from class B", b.meth());
     }
 }
 
